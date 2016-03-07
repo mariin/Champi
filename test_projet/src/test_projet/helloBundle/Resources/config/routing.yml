@@ -1,0 +1,7 @@
+hello_homepage:
+    path:     /
+    defaults: { _controller: helloBundle:Default:index }
+
+homepageCo:
+    path: /homepageCo
+    defaults: { _controller: helloBundle:Connecte:index}

@@ -1,0 +1,15 @@
+
+{% extends '::base.html.twig' %}
+{% block title %} Accueil {% endblock %}
+
+{% block body %}
+	<center>
+	<img id = "grosChampi" src="{{asset('img/groschampi.jpg')}}"  >
+	</center>
+{%endblock%}
+
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{asset('bundles/hello/css/accueil.css')}}"/>
+    
+    
+{% endblock %}

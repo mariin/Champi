@@ -1,0 +1,57 @@
+{% extends '::base.html.twig' %}
+{% block title %} Projet {% endblock %}
+
+
+ {%block head %}
+    <meta charset="utf-8" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, minimal-ui">
+    <title>qTip extension</title>
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/qtip2/2.2.0/jquery.qtip.min.css" rel="stylesheet" type="text/css" />
+{%endblock%}
+{%block body%}
+    <div id="panel">
+      <div id="projet" class="field">
+	<label for="setProjetName">Nommez le projet :</label>
+	<input type="text" id="setProjetName" name="setProjetName" placeholder="Nom projet"/>
+      </div>
+      <div id="workbench" style="display:none">
+	<div id="tools">
+	  <h2 id="indicateur">Definir un nouvel objectif :</h2>
+	  <div id="parentLayout" class="field">
+	    <!-- 
+	       <label for="parent">Parent</label>
+	       <input id="parent" type="text" name="parent"></input>
+	       -->
+	    <span>Ajouter un sous objectif Ã  </span>
+	    <span id="parentName"></span>
+	  </div>
+	  <div class="field">
+	    <label for="nom">Nom de l'objectif</label>
+	    <input id="nom" type="text" name="nom" required></input>
+	  </div>
+	  <div class="field">
+	    <label for="nom">Descriptif</label>
+	    <input id="descriptif" type="text" name="descriptif"></input>
+	  </div>
+	</div>
+	<ul id="goalSet"></ul>
+      </div>
+    </div>
+    <div id="cy"></div>
+
+
+{% block stylesheets %}
+	<link rel="stylesheet" href="{{asset('bundles/projet/css/style.css')}}"/>
+	
+{% endblock %}
+{% block javascripts %}
+    <script src="{{asset('bundles/projet/js/code.js')}}"></script>
+		
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="http://cytoscape.github.io/cytoscape.js/api/cytoscape.js-latest/cytoscape.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/qtip2/2.2.0/jquery.qtip.min.js"></script>
+    <script src="https://cdn.rawgit.com/cytoscape/cytoscape.js-qtip/2.2.5/cytoscape-qtip.js"></script>
+ 
+{% endblock %}
+{%endblock%}
+

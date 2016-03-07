@@ -1,0 +1,96 @@
+@import url(http://fonts.googleapis.com/css?family=Capriola);
+html, body {
+  padding:0;
+  margin:0;
+}
+
+#cssmenu,
+#cssmenu ul,
+#cssmenu ul li,
+#cssmenu ul li a {
+	background-color:	#00131a;
+	border-radius: 0px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
+  line-height: 1;
+  display: block;
+  position: relative;
+  font-family: Capriola, Helvetica, sans-serif;
+}
+#cssmenu {
+  width: 100%;
+  height: 40px;
+  padding-bottom: 4px;
+  margin-bottom: 30px;
+}
+#cssmenu.align-right {
+  float: right;
+}
+#cssmenu.align-right ul li {
+  float: right;
+  margin-right: 0;
+  margin-left: 4px;
+}
+#cssmenu.align-right ul li:first-child,
+#cssmenu.align-right ul li:first-child > a {
+  border-bottom-right-radius: 3px;
+}
+
+#cssmenu ul {
+  height: 30px;
+}
+#cssmenu ul li {
+  float: left;
+  margin-right: 4px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  z-index: 5;
+}
+#cssmenu ul li a {
+  padding: 14px 20px ;
+  margin-bottom: 0px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  color: #eeeeee;
+  font-size: 15px;
+  text-decoration: none;
+}
+#cssmenu ul li:first-child,
+#cssmenu ul li:first-child > a {
+  border-bottom-left-radius: 3px;
+}
+
+#cssmenu ul li a:hover,
+#cssmenu ul li.active > a {
+  background-color:#1A878F;
+  color: #ffffff;
+  border-radius: 10px;
+}
+img {
+	margin:2px;
+	margin-left:6px;
+  max-width: 100%;
+  vertical-align: middle;
+  border: 2;
+  -ms-interpolation-mode: bicubic;
+}
+
+#champi{
+  margin:3px;
+  color: #eeeeee;
+  font-size: 30px;
+  text-decoration: none;
+}
+.pull-right {
+  float: right;
+}
+.pull-left {
+  float: left;
+}
+p{
+	 font-family: Capriola, Helvetica, sans-serif;
+	
+}
+

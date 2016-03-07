@@ -1,0 +1,23 @@
+user_homepage:
+    path:     /login/login
+    defaults: { _controller: UserBundle:Default:index }
+
+fos_user_security:
+    path: /routing/security.xml
+    prefix: / 
+
+fos_user_profile:
+    path: routing/profile.xml
+    prefix: /profile 
+    
+fos_user_registration:
+    path : routing/registration.xml
+    prefix: /registration
+    
+fos_user_resetting:
+    path: routing/resetting.xml
+    prefix: /resseting 
+    
+fos_user_change_password:
+    path: routing/change_password.xml
+    prefix: /profile 

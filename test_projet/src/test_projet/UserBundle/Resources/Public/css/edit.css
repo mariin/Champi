@@ -1,0 +1,29 @@
+
+#modif{
+	background-image:url("../img/document_edit.png");
+
+	background-repeat:no-repeat;
+	background-size: 30px;
+	height: 30px; width: 30px;
+}
+
+.body{
+	
+		padding:40px;
+	  	padding-left: 160px;
+	  display: inline;
+	 
+	   
+} 
+#changepass{
+	display: inline;
+	 padding: 40px;
+	 padding-top: 110px;
+	 text-align: center;
+	float:left;
+}
+
+#divpass{
+	width: 110px;
+}
+

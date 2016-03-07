@@ -1,0 +1,38 @@
+{% extends '::base.html.twig' %}
+
+
+
+{%block head%}
+        <meta charset="UTF-8" />
+{%endblock%}
+
+{%block body%}
+
+  
+
+        {% if app.request.hasPreviousSession %}
+            {% for type, messages in app.session.flashbag.all() %}
+                {% for message in messages %}
+                    <div class="flash-{{ type }}">
+                        {{ message }}
+                    </div>
+                {% endfor %}
+            {% endfor %}
+        {% endif %}
+
+        <div>
+            {% block fos_user_content %}
+            {% endblock fos_user_content %}
+        </div>
+{% endblock %}
+
+{% block stylesheets %}
+	<link rel="stylesheet" href="{{asset('bundles/user/css/form.css')}}"/>
+	<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	
+{% endblock %}
+{% block javascripts %}
+    <script src="{{asset('bundles/user/js/form.js')}}"></script>
+ 
+{% endblock %}

@@ -1,0 +1,136 @@
+* {
+	margin:0;
+	padding:0;
+}
+
+body { 
+  font: 14px helvetica neue, helvetica, arial, sans-serif;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  margin: 0;
+  padding: 0;
+}
+
+#cy {
+float:right;
+height:100%;
+width:70%;
+}
+
+#panel {
+    float:left;
+    width:29%;
+    height:100%;
+    border-right:2px solid silver;
+    background-color:#B9DFFF;
+}
+
+#tools {
+	text-align:center;
+	background-color: #46A546;
+	margin:0px 20px 0px 20px;	
+	margin-top: 10%;
+	margin-bottom: 10%;
+	-moz-box-shadow: 1px 1px 5px 1px #c0c0c0;
+	-webkit-box-shadow: 1px 1px 5px 1px #c0c0c0;
+	-o-box-shadow: 1px 1px 5px 1px #c0c0c0;
+	box-shadow: 1px 1px 5px 1px #c0c0c0;
+filter:progid:DXImageTransform.Microsoft.Shadow(color=#c0c0c0, Direction=134, Strength=5);
+}
+
+h2 {
+    display:block;
+    font-weight:bold;
+    font-size:1.5em;
+    text-align:center;
+}
+
+
+.field {
+    line-height:1.5em;
+    margin-bottom: 5px;
+}
+
+label {
+    display:block;
+    width :100%;
+	text-align:center;
+	margin:auto;
+    font-size:1.3em;
+    margin-left:5px;
+    margin-right:5px;
+}
+
+input {
+	display:block;
+    vertical-align:top;
+    height:1.3em;
+	width:80%;
+	margin:auto;
+	text-align:center;
+}
+
+#projet {
+	position:relative;
+	top:20%;
+	width:98%;
+	margin:auto;
+	padding-top:1px;
+	padding-bottom:10px;
+	color: #CCC;
+	background-color:#005580;
+	-moz-box-shadow: 1px 1px 5px 0px #9b9b9b;
+	-webkit-box-shadow: 1px 1px 5px 0px #9b9b9b;
+	-o-box-shadow: 1px 1px 5px 0px #9b9b9b;
+	box-shadow: 1px 1px 5px 0px #9b9b9b;
+	
+}
+
+#projet label {
+	display:block;
+	text-align:center;
+	width:100%;
+	font-size:200%;
+	font-family: Avantgarde, sans-serif;
+	margin:5%;
+	text-shadow: 0px 0px 1px #555;
+	color:#E8E8E8;
+}
+
+#projet input {
+	display:block;
+	width:80%;
+	margin:auto;
+	font-size:250%;
+	text-align:center;
+}
+
+#projet h1 {
+	text-align:center;
+	font-size:200%;
+	font-family: sans-serif;
+	padding:2px;
+	margin:2px;
+	text-shadow: 0px 0px 1px #555;
+	color:#E8E8E8;
+}
+
+button {
+    display:inline;
+    margin:auto;
+}
+
+li {
+	padding-left:5%;
+	font-size:20px;
+}
+
+ul {
+    background-color: rgba(20,20,20,0.1);
+    padding-left:1%;
+    font-family: Avantgarde, sans-serif;
+list-style-type: none;
+}
